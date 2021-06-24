@@ -16,6 +16,16 @@ export const styles = StyleSheet.create({
         justifyContent: 'space-between',
         marginBottom: 12
     },
+
+    guildIconContainer:{
+        height: 68,
+        width: 64,
+        borderRadius: 8,
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginRight: 20,
+    },
+
     title: {
         fontFamily: theme.fonts.title700,
         color: theme.colors.heading,
@@ -51,5 +61,5 @@ export const styles = StyleSheet.create({
         fontSize: 13,
         marginLeft: 7,
         marginRight: 24
-    }
+    },
 });

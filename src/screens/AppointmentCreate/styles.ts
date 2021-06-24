@@ -21,7 +21,7 @@ export const styles = StyleSheet.create({
         flexDirection: 'row',
         width: '100%', 
         height: 68,
-        borderColor: theme.colors.secondary50,
+        borderColor: theme.colors.secondary40,
         borderWidth: 1,
         borderRadius: 8,
         alignItems: 'center',    
@@ -35,6 +35,7 @@ export const styles = StyleSheet.create({
         backgroundColor: theme.colors.secondary50,
         borderWidth: 1,
         borderRadius: 8,
+        borderColor: theme.colors.secondary50,
 
     },
 

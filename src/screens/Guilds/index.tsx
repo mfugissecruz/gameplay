@@ -24,7 +24,7 @@ export function Guilds({ handleGuildSelect }: Props){
       name: 'Galera do Game',
       icon: 'image.png',
       owner: true
-    }
+    },
   ];
 
   return (
@@ -32,14 +32,16 @@ export function Guilds({ handleGuildSelect }: Props){
       <FlatList 
         data={guilds}
         keyExtractor={item => item.id}
-        renderItem={({ item }) => (
+        renderItem={({ item }) =>   (
           <Guild 
             data={item} 
             onPress={() => handleGuildSelect(item)}
           />
         )}    
         showsVerticalScrollIndicator={false}
-        ItemSeparatorComponent={() => <ListDivider />}
+        ItemSeparatorComponent={() => <ListDivider isCentered/>}
+        contentContainerStyle={{ paddingBottom: 68, paddingTop: 103 }}
+        ListHeaderComponent={() => <ListDivider isCentered/>}
         style={styles.guilds}
       />
     </View>

@@ -9,6 +9,9 @@ export const styles = StyleSheet.create({
         color: theme.colors.heading,
         fontSize: 13,
         marginRight: 4,
+        borderWidth: 1,
+        borderRadius: 8,
+        borderColor: theme.colors.secondary50,
         textAlign: 'center',
     },
 });
