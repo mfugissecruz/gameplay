@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react" /*'react-native/node_modules/@types/react';*/
 import { View, Text } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { RectButton, RectButtonProps } from 'react-native-gesture-handler';
@@ -26,7 +26,7 @@ type Props = RectButtonProps & {
 }
 
 export function Appointment({ data, ...rest }: Props) {
-    const [category] = categories.filter(item => item.id === data.category);
+    const [category] = categories.filter(category => category.id === data.category);
     const {secondary50, secondary70} = theme.colors;
     const { owner } = data.guild;
     const { primary, on } = theme.colors;
@@ -38,7 +38,7 @@ export function Appointment({ data, ...rest }: Props) {
                     style={styles.guildIconContainer}
                     colors = {[secondary50, secondary70]}
                 >
-                    <GuildIcon />
+                    <GuildIcon guildId={data.guild.id} iconId={data.guild.icon}/>
                 </LinearGradient>
 
                 <View style={styles.content}>
@@ -47,7 +47,7 @@ export function Appointment({ data, ...rest }: Props) {
                             {data.guild.name}
                         </Text>
 
-                        <Text style={styles.category}>
+                        <Text style={styles.categories}>
                             {category.title}
                         </Text>
                     </View>

@@ -31,7 +31,7 @@ export const styles = StyleSheet.create({
         color: theme.colors.heading,
         fontSize: 18
     },
-    category: {
+    categories: {
         fontFamily: theme.fonts.text400,
         color: theme.colors.highlight,
         fontSize: 13,
